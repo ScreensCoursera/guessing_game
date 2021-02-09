@@ -6,9 +6,9 @@ number_files=$(find -maxdepth 1 -type f | wc -l)
 
 # User input: guessing number
 echo "Welcome to the guessing game. Please guess how many files are in the actual directory: "
-read guessing #Variable für Eingabe definieren
+read guessing
 
-# Test if guessing is 'too high' OR 'too low' OR matching
+# Test if guessing is 'too high' OR 'too low'
 while [[ $guessing -ne $number_files ]]
 do
   if [[ $guessing -gt $number_files ]]
@@ -21,5 +21,5 @@ do
   fi
 done
 
-# Wie komme ich in diesen Teil der Schleife???
+# If guessed number is correct.
 echo "Congratulations, you got it!!!"
