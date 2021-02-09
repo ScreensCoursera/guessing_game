@@ -15,12 +15,11 @@ do
   then
     echo "Entered value is too high. Please try again:"
     read guessing
-  elif [[ $guessing -lt $number_files ]]
-  then
+  else [[ $guessing -lt $number_files ]]
     echo "Entered value is too low. Please try again:"
     read guessing
-  else
-    # Wie komme ich in diesen Teil der Schleife???
-    echo "Congratulations, you got it!!!"
   fi
 done
+
+# Wie komme ich in diesen Teil der Schleife???
+echo "Congratulations, you got it!!!"
