@@ -15,13 +15,12 @@ do
   then
     echo "Entered value is too high. Please try again:"
     read guessing
-    #Wie komme ich aus der Schleife raus, wenn der Wert zu hoch ist???
-    #Könnte man das echo und read in eine funktion schreiben?
   elif [[ $guessing -lt $number_files ]]
   then
     echo "Entered value is too low. Please try again:"
     read guessing
   else
-    echo "Congratulations, the entered value is right!"
+    # Wie komme ich in diesen Teil der Schleife???
+    echo "Congratulations, you got it!!!"
   fi
 done
