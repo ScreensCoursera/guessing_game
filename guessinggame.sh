@@ -5,7 +5,7 @@
 number_files=$(find -maxdepth 1 -type f | wc -l)
 
 # User input: guessing number
-echo "Welcome to the guessing game. Please guess how many files are in the actual directory: "
+echo "Welcome to the Guessing Game. Please guess how many files are in the actual directory: "
 read guessing
 
 # Test if guessing is 'too high' OR 'too low'
