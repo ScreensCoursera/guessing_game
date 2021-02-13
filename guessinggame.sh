@@ -1,5 +1,5 @@
-#! /usr/bin/env #!/usr/bin/env bash
-# File: guessinggame.#!/bin/sh
+#!/usr/bin/env bash
+# File: guessinggame.sh
 
 # Determine the number of files in the directory
 number_files=$(find -maxdepth 1 -type f | wc -l)
